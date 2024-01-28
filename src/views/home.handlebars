@@ -1,0 +1,20 @@
+<h1>Nuestra Lista de Producto</h1>
+
+{{#if admin }}
+{{#each products}}
+
+<p>{{this.title}}</p>
+<p>{{this.Description}}</p>
+<p>{{this.Code}}</p>
+<p>{{this.Price}}</p>
+<p>{{this.Status}}</p>
+<p>{{this.Stock}}</p>
+<p>{{this.Category}}</p>
+<p>{{this.Thumbnails}}</p>
+<p>{{this.id}}</p>
+{{/each}}
+
+{{else}}
+<p>No eres admin</p>
+{{>saludo}}
+{{/if}}
